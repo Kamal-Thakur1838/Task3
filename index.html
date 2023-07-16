@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <span id="logo"> Resume</span>
+        <span id="search"> <input type="text" placeholder="Search"></span>
+    </div>
+    <div class="home">
+        <div class="left">
+            <h1> The Best Resume Builder Website</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium culpa impedit qui ipsum nostrum nam autem eos, nemo vero corporis totam ipsam animi sint excepturi quae aut distinctio eligendi accusamus non facere aliquid ad deleniti cupiditate placeat. Ex aperiam inventore perferendis maiores repudiandae et ullam cupiditate, praesentium iure nam alias.</p>
+
+           <a href="home.html"> <button> Try It</button></a>
+        </div>
+
+        <div class="right">
+            <img src="" alt="Not Found" id="image">
+        </div>
+    </div>
+</body>
+<script>
+    let image = document.getElementById("image");
+    let images = ['1st.jpeg','2nd.jpeg','3.jpeg','4.jpg']
+    setInterval(function(){
+        let random = Math.floor(Math.random()*4)
+        image.src = images[random];
+    },1500) 
+</script>
+</html>
